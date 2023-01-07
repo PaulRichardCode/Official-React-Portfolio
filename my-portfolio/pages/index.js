@@ -1,5 +1,12 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import {
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillYoutube,
+} from "react-icons/ai";
+import Image from "next/image";
+import deved from "../public/dev-ed-wave.png";
 
 export default function Home() {
   return (
@@ -13,7 +20,9 @@ export default function Home() {
       <main className=" bg-white px-10">
         <section className="min-h-screen">
           <nav className=" py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">Deployedbyrichy</h1>
+            <h1 className="text-xl font-burtons cursor-pointer">
+              Deployedbyrichy
+            </h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill className=" cursor-pointer text-2xl" />
@@ -27,6 +36,24 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <div className="text-center p-1">
+            <h2 className="	text-5xl py-2 text-teal-600 font-medium">
+              Paul Richard
+            </h2>
+            <h3 className="text-2xl py-2">Developer and designer</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
+              Freelancer providing service for your programming needs. Join me
+              below, and let achieve your goals.
+            </p>
+          </div>
+          <div className=" text-5xl flex justify-center gap-16 py3 text-gray-600">
+            <AiFillLinkedin className="cursor-pointer " />
+            <AiFillTwitterCircle className="cursor-pointer " />
+            <AiFillYoutube className="cursor-pointer " />
+          </div>
+          <div className="flex justify-center relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80">
+            <Image src={deved} />
+          </div>
         </section>
       </main>
     </div>
