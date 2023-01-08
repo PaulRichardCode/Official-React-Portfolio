@@ -229,7 +229,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <footer className=" font-burtons bg-teal-500 text-white w-100 text-center p-5 rounded-xl dark:text-black">
+        <footer className=" font-burtons bg-gradient-to-b from-teal-600 to-gray-900 text-gray-300 w-100 text-center p-5 rounded-xl dark:text-gray-300">
           <h3>Created with React js, Next js, Tailwind css</h3>
           <p>Copyright @PaulRichardevs</p>
         </footer>
