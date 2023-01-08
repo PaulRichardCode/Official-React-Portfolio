@@ -3,10 +3,19 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
-  AiFillYoutube,
+  AiFillGithub,
 } from "react-icons/ai";
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
+import web1 from "../public/web1.png";
+import web2 from "../public/web2.png";
+import web3 from "../public/web3.png";
+import web4 from "../public/web4.png";
+import web5 from "../public/web5.png";
+import web6 from "../public/web6.png";
 
 export default function Home() {
   return (
@@ -17,7 +26,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" bg-white px-10">
+      <main className=" bg-white px-10 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className=" py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons cursor-pointer">
@@ -36,26 +45,139 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-1">
-            <h2 className="	text-5xl py-2 text-teal-600 font-medium">
+          <div className="text-center p-10">
+            <h2 className="	text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Paul Richard
             </h2>
-            <h3 className="text-2xl py-2">Developer and designer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">
+            <h3 className="text-2xl py-2 md:text-3xl">
+              Developer and designer
+            </h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
               Freelancer providing service for your programming needs. Join me
               below, and let achieve your goals.
             </p>
           </div>
-          <div className=" text-5xl flex justify-center gap-16 py3 text-gray-600">
-            <AiFillLinkedin className="cursor-pointer " />
-            <AiFillTwitterCircle className="cursor-pointer " />
-            <AiFillYoutube className="cursor-pointer " />
+          <div className=" pb-10 text-5xl flex justify-center gap-16 py3 text-gray-600">
+            <a
+              href="https://www.linkedin.com/in/richard-paul-11321124b/"
+              target="_blank">
+              <AiFillLinkedin className="cursor-pointer hover:text-teal-700 " />
+            </a>
+            <a href="https://twitter.com/RichC0DE" target="_blank">
+              <AiFillTwitterCircle className="cursor-pointer hover:text-teal-700" />
+            </a>
+            <a href="https://github.com/PaulRichardCode" target="_blank">
+              <AiFillGithub className="cursor-pointer hover:text-teal-700" />
+            </a>
           </div>
-          <div className="flex justify-center relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80">
-            <Image src={deved} />
+          <div className=" overflow-hidden mx-auto relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80">
+            <Image src={deved} layout="fill" objectFit="cover" />
+          </div>
+        </section>
+        {/* SECTION 2222 */}
+
+        <section>
+          <div>
+            <h3 className="text-3xl py-5 text-center">Services i offer</h3>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              Since the beginning of my Journey has a freelance frontend
+              developer, I have done remote work for several
+              <span className="text-teal-500 cursor-pointer">
+                {" "}
+                startups
+              </span>{" "}
+              and
+              <span className="text-teal-500 cursor-pointer"> companies</span>.
+              I have collaborated with talented people to create for both
+              business and consumer use.
+              <p className="text-md py-2 leading-8 text-gray-800">
+                I offer from a wide range of services, including programming and
+                teaching.
+              </p>
+            </p>
+          </div>
+          <div>
+            <div className=" flex justify-center flex-col items-center shadow-lg p-10 rounded-xl py-10">
+              <Image src={design} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2"> Creating elegant designs suited for you</p>
+              <h4 className="py-4 text-teal-600">Design tools i use</h4>
+              <p className="text-grey-800 py-1">Figma</p>
+              <p className="text-grey-800 py-1">Adobe XD</p>
+              <p className="text-grey-800 py-1">Photoshop</p>
+            </div>
+            <div className=" flex justify-center flex-col items-center shadow-lg p-10 rounded-xl py-10">
+              <Image src={code} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Frontend Developer
+              </h3>
+              <p className="py-2 text-center">
+                {" "}
+                I like to code things from scratch, and enjoy bringing ideas to
+                life in the browser.
+              </p>
+              <h4 className="py-4 text-teal-600">Language i use</h4>
+              <p className="text-grey-800 py-1">HTML</p>
+              <p className="text-grey-800 py-1">CSS</p>
+              <p className="text-grey-800 py-1">Bootstrap</p>
+              <p className="text-grey-800 py-1">Tailwind</p>
+              <p className="text-grey-800 py-1">JavaScript</p>
+              <p className="text-grey-800 py-1">React.js</p>
+              <p className="text-grey-800 py-1">Next.js</p>
+            </div>
+            <div className=" flex justify-center flex-col items-center shadow-lg p-10 rounded-xl py-10">
+              <Image src={consulting} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">Mentor</h3>
+              <p className="py-2 text-center">
+                {" "}
+                I genuinely care about people, and love helping fellow designers
+                work on their craft.
+              </p>
+              <h4 className="py-4 text-teal-600">Mentor Stats</h4>
+              <p className="text-grey-800 py-1">2 years experience</p>
+              <p className="text-grey-800 py-1">10+ students</p>
+              <p className="text-grey-800 py-1">6 short courses</p>
+            </div>
           </div>
         </section>
       </main>
+      <section>
+        <div className="text-center">
+          <h3 className="text-3xl py-5 text-center">Portfolio</h3>
+          <p>
+            Here are a few past design projects I've worked on. Want to see
+            more?{" "}
+            <spam className="text-teal-500 cursor-pointer">
+              <a href="https://mail.google.com/mail/u/paulrichardevs@gmail.com">
+                {" "}
+                Email me
+              </a>
+            </spam>
+          </p>
+        </div>
+        <div className="py-8">
+          <div>
+            <Image src={web1} className="cursor-pointer p-5 round" />
+          </div>
+          <div>
+            <Image src={web2} className="cursor-pointer p-5" />
+          </div>
+          <div>
+            <Image src={web3} className="cursor-pointer p-5" />
+          </div>
+          <div>
+            <Image src={web4} className="cursor-pointer p-5" />
+          </div>
+          <div>
+            <Image src={web5} className="cursor-pointer p-5" />
+          </div>
+          <div>
+            <Image src={web6} className="cursor-pointer p-5" />
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
