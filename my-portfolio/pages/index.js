@@ -105,7 +105,7 @@ export default function Home() {
           </div>
 
           <div className="lg:flex lg:items-start lg:justify-center">
-            <div className=" flex justify-center flex-col text-center items-center shadow-lg p-10 rounded-xl py-10  flex-1">
+            <div className=" flex justify-center flex-col text-center items-center shadow-lg p-10 rounded-xl py-10 dark:bg-gray-800  flex-1">
               <Image src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                 Beautiful Designs
@@ -119,7 +119,7 @@ export default function Home() {
               <p className="text-grey-800 py-1 dark:text-gray-300">Adobe XD</p>
               <p className="text-grey-800 py-1 dark:text-gray-300">Photoshop</p>
             </div>
-            <div className=" flex justify-center flex-col items-center shadow-lg p-10 rounded-xl py-10 max-w-lg mx-auto flex-1">
+            <div className=" flex justify-center flex-col items-center shadow-lg p-10 rounded-xl py-10 max-w-lg mx-auto flex-1 ">
               <Image src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                 Frontend Developer
@@ -140,7 +140,7 @@ export default function Home() {
               <p className="text-grey-800 py-1 dark:text-gray-300">React.js</p>
               <p className="text-grey-800 py-1 dark:text-gray-300">Next.js</p>
             </div>
-            <div className=" flex justify-center flex-col items-center shadow-lg p-10 rounded-xl py-10 flex-1">
+            <div className=" flex justify-center flex-col items-center shadow-lg p-10 rounded-xl py-10 flex-1 dark:bg-gray-800">
               <Image src={consulting} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                 Mentor
@@ -150,9 +150,7 @@ export default function Home() {
                 I genuinely care about people, and love helping fellow designers
                 work on their craft.
               </p>
-              <h4 className="py-4 dark:text-gray-300 text-teal-600">
-                Mentor Stats
-              </h4>
+              <h4 className="py-4 text-teal-600">Mentor Stats</h4>
               <p className="text-grey-800 py-1 dark:text-gray-300">
                 2 years experience
               </p>
