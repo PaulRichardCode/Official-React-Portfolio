@@ -169,14 +169,8 @@ export default function Home() {
               Portfolio
             </h3>
             <p className="dark:text-gray-300">
-              Here are a few past design projects I've worked on. Want to see
-              more?{" "}
-              <span className="text-teal-500 cursor-pointer">
-                <a href="https://mail.google.com/mail/u/paulrichardevs@gmail.com">
-                  {" "}
-                  Email me&apos;
-                </a>
-              </span>
+              Here are a few past design projects I have worked on. Want to see
+              more?
             </p>
           </div>
           <div className="py-8 flex flex-col gap-10 lg:flex-row lg:flex-wrap">
