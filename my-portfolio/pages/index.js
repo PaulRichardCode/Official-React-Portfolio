@@ -218,13 +218,15 @@ export default function Home() {
               />
             </div>
             <div className=" basis-1/3 flex-1">
-              <Image
-                alt="pic"
-                src={web6}
-                className="cursor-pointer p-5 rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-              />
+              <a href="">
+                <Image
+                  alt="pic"
+                  src={web6}
+                  className="cursor-pointer p-5 rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                />
+              </a>
             </div>
           </div>
         </section>
