@@ -218,7 +218,7 @@ export default function Home() {
               />
             </div>
             <div className=" basis-1/3 flex-1">
-              <a href="">
+              <a href="www.livescore.com">
                 <Image
                   alt="pic"
                   src={web6}
