@@ -137,10 +137,10 @@ export default function Home() {
               </p>
               <h4 className="py-4 text-teal-600">Videos Genre</h4>
               <p className="text-grey-800 py-1 dark:text-gray-300">
-                Travel/Vlogs
+                Travel Vlogs
               </p>
               <p className="text-grey-800 py-1 dark:text-gray-300">
-                Youtube Shorts/Tiktok
+                Youtube Shorts and Tiktok
               </p>
               <p className="text-grey-800 py-1 dark:text-gray-300">
                 Social Media Videos
