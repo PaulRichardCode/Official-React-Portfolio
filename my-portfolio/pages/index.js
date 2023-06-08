@@ -24,6 +24,21 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
   const youtubeVideoId = "1";
+  const videoUrl1 = `https://www.youtube.com/embed/BY8IoF-JcWY`;
+  const videoUrl2 = `https://www.youtube.com/embed/zvhloi6SHDw`;
+  const videoUrl3 = `https://www.youtube.com/embed/Q6zLk7XAqWI`;
+  const videoUrl4 = `https://www.youtube.com/embed/XTfxvLFptr8`;
+
+  // <div>
+  //   <h1>Promotional video</h1>
+  //   <iframe
+  //     width="640"
+  //     height="390"
+  //     src={videoUrl1}
+  //     title="YouTube Video Player"
+  //     allowFullScreen
+  //   />
+  // </div>
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -79,10 +94,10 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-5 text-center dark:text-white">
+            <h3 className="text-3xl font-extrabold py-5 text-center dark:text-white">
               Services i offer
             </h3>
-            <p className="text-md py-2 leading-8 text-gray-800 max-w-xl mx-auto text-center dark:text-gray-300">
+            <p className="text-md py-2 font-semibold leading-8 text-gray-800 max-w-xl mx-auto text-center dark:text-gray-300">
               Since the beginning of my Journey has a freelance Video Editor, I
               have done remote work for several
               <span className="text-teal-500 cursor-pointer">
@@ -181,69 +196,65 @@ export default function Home() {
 
         <section>
           <div className="text-center">
-            <h3 className="text-3xl py-5 text-center dark:text-white">
+            <h3 className="text-3xl font-extrabold py-5 text-center dark:text-white">
               Portfolio
             </h3>
-            <p className="dark:text-gray-300">
+            <p className="dark:text-gray-300 font-bold">
               Here are a few video editing showreels I have worked on. Want to
               see more?
             </p>
           </div>
           <div className="py-8 flex flex-col gap-10 lg:flex-row lg:flex-wrap">
-            <div className=" basis-1/3 flex-1">
-              {/* <Image
-                alt="pic"
-                src={web1}
-                className="cursor-pointer p-5 rounded-lg object-cover rwidth={'100%'} height={'100%'}ound"
-              /> */}
+            <div className=" md:w-full ">
               <YouTubePlayer videoId={youtubeVideoId} />
             </div>
-            <div className=" basis-1/3 flex-1">
-              <Image
-                alt="pic"
-                src={web2}
-                className="cursor-pointer p-5 rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+            <div className=" md:w-full ">
+              <h1 className="text-2xl font-bold dark:text-white p-2 text-center">
+                Explainer video
+              </h1>
+              <iframe
+                className="md:w-2/3 w-full mx-auto"
+                height="390"
+                src={videoUrl1}
+                title="YouTube Video Player"
+                allowFullScreen
               />
             </div>
-            <div className=" basis-1/3 flex-1">
-              <Image
-                alt="pic"
-                src={web3}
-                className="cursor-pointer p-5 rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+            <div className=" md:w-full">
+              <h1 className="text-2xl font-bold dark:text-white p-2 text-center">
+                Co-operate films
+              </h1>
+              <iframe
+                className="md:w-2/3 w-full mx-auto"
+                height="390"
+                src={videoUrl2}
+                title="YouTube Video Player"
+                allowFullScreen
               />
             </div>
-            <div className=" basis-1/3 flex-1">
-              <Image
-                alt="pic"
-                src={web4}
-                className="cursor-pointer p-5 rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+            <div className="md:w-full ">
+              <h1 className="text-2xl font-bold dark:text-white p-2 text-center">
+                Documentary
+              </h1>
+              <iframe
+                className="md:w-2/3 w-full mx-auto"
+                height="390"
+                src={videoUrl3}
+                title="YouTube Video Player"
+                allowFullScreen
               />
             </div>
-            <div className=" basis-1/3 flex-1">
-              <Image
-                alt="pic"
-                src={web5}
-                className="cursor-pointer p-5 rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+            <div className="md:w-full">
+              <h1 className="text-2xl font-bold dark:text-white p-2 text-center">
+                Documentary
+              </h1>
+              <iframe
+                className="md:w-2/3 w-full mx-auto"
+                height="390"
+                src={videoUrl4}
+                title="YouTube Video Player"
+                allowFullScreen
               />
-            </div>
-            <div className=" basis-1/3 flex-1">
-              <a href="www.livescore.com">
-                <Image
-                  alt="pic"
-                  src={web6}
-                  className="cursor-pointer p-5 rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                />
-              </a>
             </div>
           </div>
         </section>

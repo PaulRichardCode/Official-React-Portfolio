@@ -5,9 +5,11 @@ const YouTubePlayer = ({ videoId }) => {
 
   return (
     <div>
-      <h1>My Video Page</h1>
+      <h1 className="text-2xl font-bold dark:text-white p-2 text-center">
+        Promotional video
+      </h1>
       <iframe
-        width="640"
+        className="md:w-2/3 w-full mx-auto"
         height="390"
         src={videoUrl}
         title="YouTube Video Player"
