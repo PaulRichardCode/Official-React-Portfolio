@@ -14,7 +14,7 @@ const Contact = () => {
           <span className="text-cyan-300 md:text-base text-xs md:pr-4 pr-2">
             04.
           </span>{" "}
-          What's next? {/* you can use full in the width as well */}{" "}
+          What next? {/* you can use full in the width as well */}{" "}
         </h1>
         <h1 className="text-gray-300 md:text-5xl text-3xl md:py-7 md:mb-2 mb-5 w-11/12 md:w-2/3 font-semibold tracking-tight flex items-center justify-center">
           Get In Touch
@@ -30,6 +30,7 @@ const Contact = () => {
             class="hover:shadow hover:shadow-cyan-300 duration-300 hover:transition-shadow border border-cyan-300 py-3 px-5 text-sm font-medium text-center text-cyan-300 rounded bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
             <a
               target="_blank"
+              rel="noreferrer"
               href="mailto:paulrichardevs@gmail.com?subject=Hello&body=%0D%0A%0D%0AThanks%20for%20your%20email.%0D%0A%0D%0ABest%2C%0D%0A">
               Send message
             </a>
@@ -37,17 +38,21 @@ const Contact = () => {
         </form>
         <div className="md:w-full w-5/6 md:mb-5 mt-16">
           {" "}
-          <ul className="flex justify-around items-center">
+          <ul className="flex justify-center items-center">
             <li>
               <a
+                rel="noreferrer"
                 href="https://www.instagram.com/richardpaul06/"
                 target={"_blank"}>
-                <FiInstagram className="text-gray-300/80 text-xl block md:hidden cursor-pointer  hover:text-cyan-300/80 hover:-translate-y-1 hover:transition duration-100" />
+                <FiInstagram className="text-gray-300/80 text-xl block mx-2 cursor-pointer  hover:text-cyan-300/80 hover:-translate-y-1 hover:transition duration-100" />
               </a>
             </li>
             <li>
-              <a href="https://paulrichardevs@gmail.com" target={"_blank"}>
-                <FiMail className="text-cyan-300/80 text-xl block md:hidden cursor-pointer hover:text-gray-300/80 hover:-translate-y-1 hover:transition duration-100" />
+              <a
+                rel="noreferrer"
+                href="https://paulrichardevs@gmail.com"
+                target={"_blank"}>
+                <FiMail className="text-cyan-300/80 text-xl block cursor-pointer hover:text-gray-300/80 hover:-translate-y-1 hover:transition duration-100" />
               </a>
             </li>
           </ul>
