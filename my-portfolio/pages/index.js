@@ -16,6 +16,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import Contact from "./contact/contact";
 import { useState } from "react";
 
 export default function Home() {
@@ -231,8 +232,7 @@ export default function Home() {
           </div>
         </section>
         <footer className=" font-burtons bg-gradient-to-b from-teal-600 to-gray-900 text-gray-300 w-100 text-center p-5 rounded-xl dark:text-gray-300">
-          <h3>Created with React js, Next js, Tailwind css</h3>
-          <p>Copyright @PaulRichardevs</p>
+          <Contact />
         </footer>
       </main>
     </div>
