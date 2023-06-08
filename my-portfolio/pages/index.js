@@ -18,6 +18,11 @@ import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import Contact from "./contact/contact";
 import { useState } from "react";
+import vid1 from "../public/videos/vid1.mp4";
+import vid2 from "../public/videos/vid2.mp4";
+import vid3 from "../public/videos/vid3.mp4";
+import vid4 from "../public/videos/vid4.mp4";
+import vid5 from "../public/videos/vid5.mp4";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
