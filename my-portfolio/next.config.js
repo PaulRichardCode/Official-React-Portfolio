@@ -4,4 +4,7 @@ module.exports = {
   experimental: {
     esmExternals: true,
   },
+  module: {
+    rules: [{ test: /\.txt$/, use: "raw-loader" }],
+  },
 };
