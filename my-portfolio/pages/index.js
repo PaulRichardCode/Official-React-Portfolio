@@ -18,15 +18,12 @@ import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import Contact from "./contact/contact";
 import { useState } from "react";
-import vid1 from "../public/videos/vid1.mp4";
-import vid2 from "../public/videos/vid2.mp4";
-import vid3 from "../public/videos/vid3.mp4";
-import vid4 from "../public/videos/vid4.mp4";
-import vid5 from "../public/videos/vid5.mp4";
+import YouTubePlayer from "./youtube";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
+  const youtubeVideoId = "1";
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -194,19 +191,17 @@ export default function Home() {
           </div>
           <div className="py-8 flex flex-col gap-10 lg:flex-row lg:flex-wrap">
             <div className=" basis-1/3 flex-1">
-              <Image
+              {/* <Image
                 alt="pic"
                 src={web1}
                 className="cursor-pointer p-5 rounded-lg object-cover rwidth={'100%'} height={'100%'}ound"
-              />
-              <video controls>
-                <source src={videoA} />
-              </video>
+              /> */}
+              <YouTubePlayer videoId={youtubeVideoId} />
             </div>
             <div className=" basis-1/3 flex-1">
               <Image
                 alt="pic"
-                src={web1}
+                src={web2}
                 className="cursor-pointer p-5 rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
