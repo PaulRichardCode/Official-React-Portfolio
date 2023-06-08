@@ -18,11 +18,11 @@ import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import Contact from "./contact/contact";
 import { useState } from "react";
-import vid1 from "../public/videos/vid1.mp4";
-import vid2 from "../public/videos/vid2.mp4";
-import vid3 from "../public/videos/vid3.mp4";
-import vid4 from "../public/videos/vid4.mp4";
-import vid5 from "../public/videos/vid5.mp4";
+import vid1 from "./videos/vid1.mp4";
+import vid2 from "./videos/vid2.mp4";
+import vid3 from "./videos/vid3.mp4";
+import vid4 from "./videos/vid4.mp4";
+import vid5 from "./videos/vid5.mp4";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -187,8 +187,8 @@ export default function Home() {
               Portfolio
             </h3>
             <p className="dark:text-gray-300">
-              Here are a few past design projects I have worked on. Want to see
-              more?
+              Here are a few video editing showreels I have worked on. Want to
+              see more?
             </p>
           </div>
           <div className="py-8 flex flex-col gap-10 lg:flex-row lg:flex-wrap">
@@ -216,6 +216,10 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
               />
+
+              <video controls>
+                <source src="/path/to/video.mp4" type="video/mp4" />
+              </video>
             </div>
             <div className=" basis-1/3 flex-1">
               <Image
