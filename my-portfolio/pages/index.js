@@ -24,16 +24,6 @@ export default function Home() {
   const videoUrl3 = `https://www.youtube.com/embed/Q6zLk7XAqWI`;
   const videoUrl4 = `https://www.youtube.com/embed/XTfxvLFptr8`;
 
-  // <div>
-  //   <h1>Promotional video</h1>
-  //   <iframe
-  //     width="640"
-  //     height="390"
-  //     src={videoUrl1}
-  //     title="YouTube Video Player"
-  //     allowFullScreen
-  //   />
-  // </div>
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
