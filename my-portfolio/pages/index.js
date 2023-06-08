@@ -65,24 +65,14 @@ export default function Home() {
               Paul Richard
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
-              FrontEnd Developer and designer
+              Professional Video Editor
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
-              Freelancer providing service for your programming needs. Join me
-              below, and let achieve your goals.
+              Dedicated to delivering visually compelling videos that captivate
+              audiences and leave a lasting impact
             </p>
           </div>
-          <div className=" pb-10 text-5xl flex justify-center gap-16 py3 text-gray-600">
-            <a href="https://www.linkedin.com/in/richard-paul-11321124b/">
-              <AiFillLinkedin className="cursor-pointer hover:text-teal-700 dark:text-white " />
-            </a>
-            <a href="https://twitter.com/RichC0DE">
-              <AiFillTwitterCircle className="cursor-pointer hover:text-teal-700 dark:text-white" />
-            </a>
-            <a href="https://github.com/PaulRichardCode">
-              <AiFillGithub className="cursor-pointer hover:text-teal-700 dark:text-white" />
-            </a>
-          </div>
+
           <div className=" overflow-hidden mx-auto relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 md:h-96 md:w-96">
             <Image src={deved} layout="fill" objectFit="cover" alt="avatar" />
           </div>
@@ -95,17 +85,17 @@ export default function Home() {
               Services i offer
             </h3>
             <p className="text-md py-2 leading-8 text-gray-800 max-w-xl mx-auto text-center dark:text-gray-300">
-              Since the beginning of my Journey has a freelance frontend
-              developer, I have done remote work for several
+              Since the beginning of my Journey has a freelance Video Editor, I
+              have done remote work for several
               <span className="text-teal-500 cursor-pointer">
                 {" "}
                 startups
               </span>{" "}
               and
               <span className="text-teal-500 cursor-pointer"> companies</span>.
-              I have collaborated with talented people to create for both
-              business and consumer use. I offer from a wide range of services,
-              including programming and teaching.
+              I have collaborated with talented people to create several
+              contents and fulfil project objectives, ensuring the delivery of
+              videos aligned with their vision and requirements.
             </p>
           </div>
 
@@ -113,37 +103,59 @@ export default function Home() {
             <div className=" flex justify-center flex-col text-center items-center shadow-lg p-10 rounded-xl py-10 dark:bg-gray-800  flex-1">
               <Image alt="design" src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
-                Beautiful Designs
+                Tools and Software used
               </h3>
               <p className="py-2 dark:text-gray-300">
                 {" "}
-                Creating elegant designs suited for you
+                Experiment with different techniques and workflows to find what
+                works best for you
               </p>
-              <h4 className="py-4 text-teal-600">Design tools i use</h4>
-              <p className="text-grey-800 py-1 dark:text-gray-300">Figma</p>
-              <p className="text-grey-800 py-1 dark:text-gray-300">Adobe XD</p>
-              <p className="text-grey-800 py-1 dark:text-gray-300">Photoshop</p>
+              <h4 className="py-4 text-teal-600">Editing tools i use</h4>
+              <p className="text-grey-800 py-1 dark:text-gray-300">
+                Adobe Premiere Pro
+              </p>
+              <p className="text-grey-800 py-1 dark:text-gray-300">
+                Final Cut Pro
+              </p>
+              <p className="text-grey-800 py-1 dark:text-gray-300">
+                DaVinci Resolve
+              </p>
+              <p className="text-grey-800 py-1 dark:text-gray-300">
+                AfterEffects
+              </p>
+              <p className="text-grey-800 py-1 dark:text-gray-300">
+                Adobe Photoshop
+              </p>
             </div>
             <div className=" flex justify-center flex-col items-center shadow-lg p-10 rounded-xl py-10 max-w-lg mx-auto flex-1 ">
               <Image alt="code" src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
-                Frontend Developer
+                Types of videos i edit
               </h3>
               <p className="py-2 text-center dark:text-gray-300">
                 {" "}
-                I like to code things from scratch, and enjoy bringing ideas to
-                life in the browser.
+                the types of videos i work on may vary depending on your
+                clients, industry, and personal interests.
               </p>
-              <h4 className="py-4 text-teal-600">Language i use</h4>
-              <p className="text-grey-800 py-1 dark:text-gray-300">HTML</p>
-              <p className="text-grey-800 py-1 dark:text-gray-300">CSS</p>
-              <p className="text-grey-800 py-1 dark:text-gray-300">Bootstrap</p>
-              <p className="text-grey-800 py-1 dark:text-gray-300">Tailwind</p>
+              <h4 className="py-4 text-teal-600">Videos Genre</h4>
               <p className="text-grey-800 py-1 dark:text-gray-300">
-                JavaScript
+                Travel/Vlogs
               </p>
-              <p className="text-grey-800 py-1 dark:text-gray-300">React.js</p>
-              <p className="text-grey-800 py-1 dark:text-gray-300">Next.js</p>
+              <p className="text-grey-800 py-1 dark:text-gray-300">
+                Youtube Shorts/Tiktok
+              </p>
+              <p className="text-grey-800 py-1 dark:text-gray-300">
+                Social Media Videos
+              </p>
+              <p className="text-grey-800 py-1 dark:text-gray-300">
+                Documentary Films
+              </p>
+              <p className="text-grey-800 py-1 dark:text-gray-300">
+                Promotional videos
+              </p>
+              <p className="text-grey-800 py-1 dark:text-gray-300">
+                Corporate Videos
+              </p>
             </div>
             <div className=" flex justify-center flex-col items-center shadow-lg p-10 rounded-xl py-10 flex-1 dark:bg-gray-800">
               <Image alt="teach" src={consulting} width={100} height={100} />
@@ -152,18 +164,18 @@ export default function Home() {
               </h3>
               <p className="py-2 text-center dark:text-gray-300">
                 {" "}
-                I genuinely care about people, and love helping fellow designers
-                work on their craft.
+                I genuinely care about people, and love helping fellow editors
+                and designers work on their craft.
               </p>
               <h4 className="py-4 text-teal-600">Mentor Stats</h4>
               <p className="text-grey-800 py-1 dark:text-gray-300">
-                2 years experience
+                3 years experience
               </p>
               <p className="text-grey-800 dark:text-gray-300 py-1">
                 10+ students
               </p>
               <p className="text-grey-800 dark:text-gray-300 py-1">
-                6 short courses
+                3 short courses
               </p>
             </div>
           </div>
